@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>p4query</artifactId>
+        <groupId>p4query</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>p4query</groupId>
+    <artifactId>experts-pattern-analysis</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+        <groupId>p4query</groupId>
+        <artifactId>ontology</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        </dependency>
+    
+        <dependency>
+        <groupId>org.apache.tinkerpop</groupId>
+        <artifactId>gremlin-driver</artifactId>
+        <version>${gremlin.version}</version>
+        <type>jar</type>
+        </dependency>
+
+        <dependency>
+        <groupId>org.apache.tinkerpop</groupId>
+        <artifactId>tinkergraph-gremlin</artifactId>
+        <version>${gremlin.version}</version>
+        <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
